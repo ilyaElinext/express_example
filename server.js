@@ -16,6 +16,7 @@ var server = http.createServer(function (request, response) {
     console.log(`method ${request.method} and url ${request.url}`)
     if (request.method === 'GET' && request.url === RELOAD_PATH) {
         console.log(`reload request starting at ${new Date().toISOString()}...`);
+        console.log('hello');
         refreshAppFromGit();
         response.write(`RELOADED!!${new Date().toISOString()}`);
         response.end();
