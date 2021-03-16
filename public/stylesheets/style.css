@@ -252,3 +252,6 @@ footer {
 footer ul {
   list-style: none;
 }
+body{
+  background: red !important;
+}
