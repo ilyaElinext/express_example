@@ -29,5 +29,5 @@ window.onload = (event) => {
 	    .then(function () {
 	      // always executed
 	    });
-	}, 10*1000)
+	}, 60*1000)
 };
