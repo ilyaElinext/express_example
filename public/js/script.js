@@ -7,6 +7,20 @@ window.onload = (event) => {
 	      console.log('call guarded-reaches-84708');
 	      const apiVersion = response.data.version;
 	      console.log(apiVersion);
+	      	  axios.get('http://localhost:4505/reload')
+			    .then(function (response) {
+			      // handle success
+			      console.log('response from http://localhost:4505/reload');
+			      console.log(response);
+			      location.reload();
+			    })
+			    .catch(function (error) {
+			      // handle error
+			      console.log(error);
+			    })
+			    .then(function () {
+			      // always executed
+			    });
 	    })
 	    .catch(function (error) {
 	      // handle error
